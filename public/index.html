@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SkillPath - Skill Recommendation</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Skill<span>Path</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#form">Assessment</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                 AI-inspired Career Guidance
+            </div>
+
+            <h1>
+                Discover the
+                <span>right skills</span>
+                for your future.
+            </h1>
+
+            <p>
+                Tell us about your interests, current skill level
+                and career goals. Our recommendation system will
+                suggest skills to help you move forward.
+            </p>
+
+            <a href="#form" class="primary-button">
+                Start Assessment →
+            </a>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="card-icon">
+                
+            </div>
+
+            <h3>
+            Personalized Learning
+            </h3>
+
+            <p>
+                Get recommendations based on your
+                interests and current skill level.
+            </p>
+
+            <div class="mini-stat">
+
+                <div>
+                    <strong>5+</strong>
+                    <small>Career Areas</small>
+                </div>
+
+                <div>
+                    <strong>15+</strong>
+                    <small>Skills</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Assessment Section -->
+
+    <section class="assessment" id="form">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                SKILL ASSESSMENT
+            </p>
+
+            <h2>
+                Build your learning roadmap
+            </h2>
+
+            <p>
+                Complete the form below to receive
+                personalized skill recommendations.
+            </p>
+
+        </div>
+
+
+        <div class="form-container">
+
+            <form id="recommendationForm">
+
+                <!-- Personal Information -->
+
+                <div class="form-section">
+
+                    <h3>
+                         Personal Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+
+                            <label for="name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="input-group full-width">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <select id="department" required>
+
+                                <option value="">
+                                    Select your department
+                                </option>
+
+                                <option value="Computer Science">
+                                    Computer Science & Engineering
+                                </option>
+
+                                <option value="Information Technology">
+                                    Information Technology
+                                </option>
+
+                                <option value="Electronics">
+                                    Electronics & Communication
+                                </option>
+
+                                <option value="Mechanical">
+                                    Mechanical Engineering
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Career Information -->
+
+                <div class="form-section">
+
+                    <h3>
+                         Career Preferences
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="input-group">
+
+                            <label for="interest">
+                                Area of Interest
+                            </label>
+
+                            <select id="interest" required>
+
+                                <option value="">
+                                    Select an area
+                                </option>
+
+                                <option value="Web Development">
+                                    Web Development
+                                </option>
+
+                                <option value="Data Science">
+                                    Data Science
+                                </option>
+
+                                <option value="Artificial Intelligence">
+                                    Artificial Intelligence
+                                </option>
+
+                                <option value="Cybersecurity">
+                                    Cybersecurity
+                                </option>
+
+                                <option value="UI/UX Design">
+                                    UI/UX Design
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="skillLevel">
+                                Current Skill Level
+                            </label>
+
+                            <select id="skillLevel" required>
+
+                                <option value="">
+                                    Select your level
+                                </option>
+
+                                <option value="beginner">
+                                    Beginner
+                                </option>
+
+                                <option value="intermediate">
+                                    Intermediate
+                                </option>
+
+                                <option value="advanced">
+                                    Advanced
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group full-width">
+
+                            <label for="careerGoal">
+                                Career Goal
+                            </label>
+
+                            <textarea
+                                id="careerGoal"
+                                rows="4"
+                                placeholder="Example: I want to become a full-stack developer..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <div class="submit-area">
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        id="submitButton">
+
+                        Get My Recommendations →
+
+                    </button>
+
+                    <p>
+                         Your information is used only
+                        for generating recommendations.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Loading -->
+
+    <div
+        class="loading-overlay"
+        id="loading">
+
+        <div class="loader"></div>
+
+        <p>
+            Analyzing your preferences...
+        </p>
+
+    </div>
+
+
+    <!-- Results -->
+
+    <section
+        class="results-section"
+        id="resultsSection">
+
+        <div class="results-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Your Skill Roadmap
+            </h2>
+
+            <p id="resultMessage">
+                Here are your recommended skills.
+            </p>
+
+
+            <div
+                class="user-summary"
+                id="userSummary">
+            </div>
+
+
+            <h3>
+                Recommended Skills
+            </h3>
+
+            <div
+                class="recommendation-list"
+                id="recommendationList">
+            </div>
+
+
+            <button
+                class="secondary-button"
+                onclick="resetForm()">
+
+                Create Another Assessment
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+
+    <section class="about" id="about">
+
+        <div>
+
+            <p class="section-label">
+                ABOUT THE PROJECT
+            </p>
+
+            <h2>
+                Designed around the user.
+            </h2>
+
+        </div>
+
+        <p>
+            SkillPath demonstrates a human-centered web form
+            where users provide their preferences and receive
+            personalized recommendations through a REST API.
+            The project combines UI/UX principles, frontend
+            development, JavaScript validation and backend API
+            processing.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 SkillPath 
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
